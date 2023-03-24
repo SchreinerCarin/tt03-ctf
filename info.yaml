@@ -1,7 +1,7 @@
 --- 
 # TinyTapeout project information
 project:
-  wokwi_id:    354091612057990145        # If using wokwi, set this to your project's ID
+  wokwi_id:    360014965627378689        # If using wokwi, set this to your project's ID
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
@@ -19,9 +19,9 @@ yaml_version: 3.0
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
   author:       "Carin Schreiner"      # Your name
-  title:        "4bit Adder"      # Project title
+  title:        "CTF - Catch the fish"      # Project title
   language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "This tiny tape out project takes two four bit numberbs and adds them."      # Short description of what your project does
+  description:  "Catch the fish is a whac-a-mole game."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
@@ -33,21 +33,21 @@ documentation:
 
 # A description of what the inputs do
   inputs:               
-    - a0
-    - a1
-    - a2
-    - a3
-    - b0
-    - b1
-    - b2
-    - b3
+    - clock
+    - button 1
+    - button 2
+    - button 3
+    - none
+    - none
+    - none
+    - none
 # A description of what the outputs do
   outputs:
-    - r0
-    - r1
-    - r2
-    - r3
-    - carry
+    - feedback 1
+    - feedback 2
+    - feedback 3
+    - reward feedback
+    - none
     - none
     - none
     - none
