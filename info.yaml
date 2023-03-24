@@ -25,11 +25,18 @@ documentation:
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Explain how your project works
+      The project consists of 
+      * a fibonacci lfsr of degree 6. 
+      * a simple timer: the timer consists of two flip flops. It slows down the game and further amplifies the pseudo-randomness
+      * a button press detection for each button
+      * a simple reward detection
+      * Output state Handlers
+      * Output Selection: The last bit of the lsfr is used as the decision whether to give an output or not. The second and third to last bits are used to determine on which pin the output should be given. If both bits are zero, no output is given.
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Explain how to test your project
+      To play the game, press the start button and make sure the clock is set to a frequency of one or two. The higher the frequency the more difficult the game gets.
+      To score, you need to press the button while the respectivly numbered feedback output is one. You then get a reward feedback
 
 # A description of what the inputs do
   inputs:               
